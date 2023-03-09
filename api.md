@@ -70,3 +70,42 @@ humidity = data['main']['humidity']
 print("Temperature: {} Kelvin".format(temp))
 print("Humidity: {}%".format(humidity))
 ```
+
+# HTML Üzerinde Apilerin Kullanımı
+
+HTML, web sayfalarının tasarımını ve içeriğini belirtmek için kullanılan bir işaret dili olduğundan, API'leri doğrudan HTML üzerinde kullanmak pek mümkün değildir. Ancak, web sayfalarında API'lerin kullanılması için JavaScript kullanılabilir.
+
+JavaScript, web sayfalarında etkileşimli öğeler oluşturmak ve API'lerden veri almak için kullanılan bir programlama dilidir. Örneğin, bir web sayfasında OpenWeatherMap API'sini kullanarak, belirli bir şehir için hava durumu verilerini alabilir ve kullanıcılara gösterebilirsiniz.
+
+Aşağıdaki örnek kod, OpenWeatherMap API'sini kullanarak, New York'taki hava durumu verilerini alır ve kullanıcılara gösterir:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+</head>
+<body>
+	<h1>Weather in New York</h1>
+	<div id="weather-info"></div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var apiKey = '{API_KEY}';
+			var apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=NewYork&appid=' + apiKey;
+			
+			$.getJSON(apiUrl, function(data) {
+				var temp = data.main.temp;
+				var humidity = data.main.humidity;
+				var description = data.weather[0].description;
+				
+				$('#weather-info').html('Temperature: ' + temp + ' Kelvin<br>Humidity: ' + humidity + '%<br>Description: ' + description);
+			});
+		});
+	</script>
+</body>
+</html>
+```
+Bu kod, jQuery kütüphanesini kullanarak, API'den hava durumu verilerini alır ve HTML sayfasında belirli bir <div> öğesi içinde gösterir. JavaScript kodu, jQuery'nin $.getJSON() fonksiyonunu kullanarak API'ye bir GET isteği gönderir ve API'den gelen JSON verilerini alır. Ardından, JavaScript, bu verileri analiz eder ve HTML sayfasındaki belirli bir öğeye yazdırır.
+
+Bu örnek, HTML sayfalarında API'leri kullanmak için JavaScript'in nasıl kullanılabileceğini göstermektedir. Ancak, API'lerin kullanımı için gerekli olan diğer programlama dilleri veya araçlar da kullanılabilir.
