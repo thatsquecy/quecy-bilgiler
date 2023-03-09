@@ -109,3 +109,21 @@ Aşağıdaki örnek kod, OpenWeatherMap API'sini kullanarak, New York'taki hava 
 Bu kod, jQuery kütüphanesini kullanarak, API'den hava durumu verilerini alır ve HTML sayfasında belirli bir <div> öğesi içinde gösterir. JavaScript kodu, jQuery'nin $.getJSON() fonksiyonunu kullanarak API'ye bir GET isteği gönderir ve API'den gelen JSON verilerini alır. Ardından, JavaScript, bu verileri analiz eder ve HTML sayfasındaki belirli bir öğeye yazdırır.
 
 Bu örnek, HTML sayfalarında API'leri kullanmak için JavaScript'in nasıl kullanılabileceğini göstermektedir. Ancak, API'lerin kullanımı için gerekli olan diğer programlama dilleri veya araçlar da kullanılabilir.
+# En Bilindik Ücretsiz Apiler
+Ücretsiz API'lerin sayısı her geçen gün artıyor ve herhangi bir amaç için uygun olan birçok seçenek mevcut. İşte en bilinen ücretsiz API'lerden bazıları:
+
+OpenWeatherMap: Dünya genelindeki hava durumu verilerine erişmek için kullanılan bir API. Sıcaklık, nem, basınç, rüzgar hızı gibi verileri sağlar.
+
+Google Maps: Haritalar ve konum tabanlı hizmetler sunan bir API. Konum arama, adres bulma, yol tarifi, coğrafi veriler, yer işaretçileri gibi özellikleri içerir.
+
+GitHub: Programlama dilleri, veritabanları, API'ler, araçlar ve hizmetler hakkında veri sağlayan bir API. Geliştiricilerin açık kaynak kodlu projeleri keşfetmesine ve bu projelerde yer almalarına olanak tanır.
+
+Twitter: Sosyal medya paylaşımları ve verileri için bir API sağlar. Hashtag ve kullanıcı aramaları, tweetlerin gönderilmesi ve alma, takipçi sayısı gibi özellikler içerir.
+
+News API: Haberler ve medya kaynakları hakkında bilgi sağlar. Haber başlıkları, açıklamaları, kaynakları, tarihleri gibi verileri içerir.
+
+OMDB API: Filmler ve televizyon programları hakkında bilgi sağlar. Film başlıkları, yazarlar, oyuncular, derecelendirmeler, özetler, posterler gibi verileri içerir.
+
+YouTube API: YouTube videoları ve kanalları için bir API sağlar. Videoları arama, izleme, beğenme ve yorum yapma gibi özellikler içerir.
+
+Bu API'ler, birçok farklı amaç için kullanılabilir ve ücretsiz planlar sunarlar. Ancak, bazı API'lerin kullanımı sınırlamalara tabi olabilir ve ücretli planlara yükseltme gerektirebilir.
